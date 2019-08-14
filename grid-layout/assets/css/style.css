@@ -9,7 +9,7 @@
   grid-template-columns: 1fr 1fr;
 }
 
-#campo1 .lista > .componente{
+.lista > .componente{
   display: grid;
   grid-template-columns: 1fr;
 }
