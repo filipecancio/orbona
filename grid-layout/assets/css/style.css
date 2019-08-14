@@ -1,35 +1,72 @@
 /*Configurações de cor*/
-.lista{
-  background: #c0d8e0;
+body{
+  background: #D3B99C;
+  color: #0C0E09;
 }
-.componente{
-  background: #56a3a6;
+input{
+  background: #E7D8C9;
   color: #484538;
 }
-
+button{
+  background: #7B935A;
+  color: #0C0E09;
+}
+.fd-form{
+  background: #E7D8C9;
+}
+.cliente{
+  background: #56a3a6;
+}
+.assinatura{
+  background: #9B4933;
+}
+.mensagem{
+  background: #FFCB5B;
+}
 /*Configurações de estilo*/
-.componente input,
-.componente{
+.fd-form,
+div input,
+div,
+button{
   border-color: transparent;
   border-radius: 1vh;
 }
 
 /*Configurações de grid*/
-.lista{
+.fd-form{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1vh;
 }
 
-.lista > .componente{
+.fd-form > div{
   display: grid;
   grid-template-columns: 1fr;
+  grid-gap: 1vh;
+}
+.fd-form > div:nth-child(n+5){
+  grid-column: 1/3;
+}
+.fd-form > .botoes{
+  grid-column: 1;
+  grid-template-columns: 1fr 1fr;
 }
 /*Configurações de dimensão*/
-.lista{
+.fd-form{
   margin: 1vh;
 }
-.lista,
-.componente{
+.fd-form,
+.fd-form > div{
   padding: 1vh;
+}
+.fd-form > div:nth-child(5) input{
+  height: 100px;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-content: : center;
+}
+section{
+  width: 500px;
 }
