@@ -1,15 +1,35 @@
-/*Configurações de estilo*/
+/*Configurações de cor*/
+.lista{
+  background: #c0d8e0;
+}
 .componente{
   background: #56a3a6;
-  padding: 10px;
+  color: #484538;
 }
+
+/*Configurações de estilo*/
+.componente input,
+.componente{
+  border-color: transparent;
+  border-radius: 1vh;
+}
+
 /*Configurações de grid*/
 .lista{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 1vh;
 }
 
 .lista > .componente{
   display: grid;
   grid-template-columns: 1fr;
+}
+/*Configurações de dimensão*/
+.lista{
+  margin: 1vh;
+}
+.lista,
+.componente{
+  padding: 1vh;
 }
