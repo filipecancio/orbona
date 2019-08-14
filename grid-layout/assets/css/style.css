@@ -1,1 +1,15 @@
-/*Commity*/
+/*Configurações de estilo*/
+.componente{
+  background: #56a3a6;
+  padding: 10px;
+}
+/*Configurações de grid*/
+.lista{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#campo1 .lista > .componente{
+  display: grid;
+  grid-template-columns: 1fr;
+}
