@@ -11,56 +11,56 @@ button{
   background: #7B935A;
   color: #0C0E09;
 }
-.fd-form{
+label{
+  background: #84BCBE;
+}
+.fd-table{
   background: #E7D8C9;
 }
-.cliente{
+.fd-table .fd-table--column{
   background: #56a3a6;
 }
-.assinatura{
+.fd-table .fd-table--row{
   background: #9B4933;
 }
-.mensagem{
-  background: #FFCB5B;
-}
 /*Configurações de estilo*/
-.fd-form,
+.fd-table,
 div input,
 div,
-button{
+button,
+label{
   border-color: transparent;
   border-radius: 1vh;
 }
 
 /*Configurações de grid*/
-.fd-form{
+.fd-table{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1vh;
 }
 
-.fd-form > div{
+.fd-table .fd-table--column{
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1vh;
 }
-.fd-form > div:nth-child(n+5){
+.fd-table .fd-table--row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1vh;
+}
+.fd-table > .fd-table--1c{
+  display: grid;
   grid-column: 1/3;
 }
-.fd-form > .botoes{
-  grid-column: 1;
-  grid-template-columns: 1fr 1fr;
-}
 /*Configurações de dimensão*/
-.fd-form{
+.fd-table{
   margin: 1vh;
 }
-.fd-form,
-.fd-form > div{
+.fd-table,
+.fd-table div{
   padding: 1vh;
-}
-.fd-form > div:nth-child(5) input{
-  height: 100px;
 }
 body{
   display: flex;
