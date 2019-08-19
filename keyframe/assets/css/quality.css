@@ -1,0 +1,31 @@
+/*cores*/
+.banner-quality{
+  background: #3782d9;
+}
+.circle-white--out{
+  background: #dcdcdc;
+}
+.circle-cut--out{
+  background: #3782d9;
+}
+/*flex*/
+.banner-quality,
+.circle-white--out{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*dimensão*/
+
+.circle-white--out{
+  width: 100px;
+  height: 100px;
+}
+.circle-cut--out{
+  width: 60px;
+  height: 60px;
+}
+.circle-white--out,
+.circle-cut--out{
+  border-radius: 100px;
+}

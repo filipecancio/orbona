@@ -1,0 +1,64 @@
+/*Estilo*/
+body{
+  background: #ffd6b8;
+}
+.banner{
+  background: #ffcf9d;
+}
+.banner h1{
+  color: #cb7e7e;
+}
+/*Grid*/
+body{
+  display: grid;
+  grid-auto-rows: 40vh;
+  grid-gap: 1vh;
+}
+/*Flex*/
+.banner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lista{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*Dimensão*/
+.banner h1,
+.banner ul{
+  font-size: 30px;
+}
+.lista{
+  height: 30px;
+  overflow: hidden;
+}
+/*animação*/
+.lista ul{
+  animation: scrollList 6s ease infinite;
+}
+@keyframes scrollList {
+  from {
+		transform: translate(0, 90px);
+	}
+  16%{
+    transform: translate(0, 60px);
+  }
+  33%{
+    transform: translate(0, 30px);
+  }
+  50%{
+    transform: translate(0, 0);
+  }
+  67%{
+    transform: translate(0, -30px);
+  }
+  83%{
+    transform: translate(0, -60px);
+  }
+  to {
+		transform: translate(0, -90px);
+	}
+}

@@ -1,1 +1,77 @@
-/*Commity*/
+/*Configurações de cor*/
+body{
+  background: #D3B99C;
+  color: #0C0E09;
+}
+input{
+  background: #E7D8C9;
+  color: #484538;
+}
+button{
+  background: #7B935A;
+  color: #0C0E09;
+}
+label{
+  background: #84BCBE;
+}
+.fd-table{
+  background: #E7D8C9;
+}
+.fd-table .fd-table--column{
+  background: #56a3a6;
+}
+.fd-table .fd-table--row{
+  background: #9B4933;
+}
+.red{
+  color: #ED6A5A;
+}
+/*Configurações de estilo*/
+.fd-table,
+input,
+div,
+button,
+label{
+  border-color: transparent;
+  border-radius: 1vh;
+}
+
+/*Configurações de grid*/
+.fd-table{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1vh;
+}
+
+.fd-table .fd-table--column{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1vh;
+}
+.fd-table .fd-table--row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1vh;
+}
+.fd-table > .fd-table--1c{
+  display: grid;
+  grid-column: 1/3;
+}
+/*Configurações de dimensão*/
+.fd-table{
+  margin: 1vh;
+}
+label,
+input,
+.fd-table,
+.fd-table div{
+  padding: 1vh;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-content: : center;
+}
+section{
+  width: 500px;
+}
