@@ -23,9 +23,12 @@ label{
 .fd-table .fd-table--row{
   background: #9B4933;
 }
+.red{
+  color: #ED6A5A;
+}
 /*Configurações de estilo*/
 .fd-table,
-div input,
+input,
 div,
 button,
 label{
@@ -58,6 +61,8 @@ label{
 .fd-table{
   margin: 1vh;
 }
+label,
+input,
 .fd-table,
 .fd-table div{
   padding: 1vh;
